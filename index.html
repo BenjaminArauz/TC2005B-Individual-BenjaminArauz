@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 1</title>
-    <link rel="shortcut icon" href="./images/tech1.jpg" type="image/x-icon">
+    <title>Laboratorios</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
     <article>
         <header>
-            <h1>Laboratorios</h1>
+            <h1 class="title">Laboratorios</h1>
             <nav>
-                <ul>
-                    <li>Matricula: A00836936</li>
-                    <li>Nombre: Benjamín Arauz</li>
-                </ul>
+                <p id="matricula">Matricula: A00836936</p>
+                <p id="name">Nombre: Benjamín Arauz</p>
             </nav>
         </header>
     </article>
     <main>
-        <section>
+        <section class="questions-container">
+            <h2 class="sub-title">Laboratorio 1</h2>
             <ol>
                 <!-- Primera pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuál es la diferencia entre Internet y la World Wide Web?
                     </h3>
                     <p>
@@ -33,12 +33,12 @@
 
                 <!-- Segunda pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuáles son las partes de un URL?
                     </h3>
                     <ul>
                         <li>
-                            <strong>Protocolo:</strong> Indica cual protocolo se debe usar para acceder a la comunicaci&oacute;n, "http/" o "https://" para paginas web seguras.
+                            <strong>Protocolo:</strong> Indica cual protocolo se debe usar para acceder a la comunicación, "http/" o "https://" para paginas web seguras.
                         </li>
                         <li>
                             <strong>Nombre de dominio:</strong> Es el nombre de sitio web que identifica en el internet.
@@ -47,68 +47,68 @@
                             <strong>Ruta:</strong> Es el nombre de sitio web que identifica en el internet.
                         </li>
                         <li>
-                            <strong>Par&aacute;metro:</strong> Proporciona informaci&oacute;n adicional sobre c&oacute;mo debe acceder al recurso.
+                            <strong>Pará;metro:</strong> Proporciona información adicional sobre cómo debe acceder al recurso.
                         </li>
                     </ul>
                 </li>
 
                 <!-- Tercera pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?
                     </h3>
                     <p>
-                        Los m&eacute;todos HTTP son acciones con los recursos identificados por el URL, entre los m&aacute;s comunes est&aacute;n:
+                        Los métodos HTTP son acciones con los recursos identificados por el URL, entre los más comunes están:
                     </p>
                     <ul>
                         <li>
-                            <strong>GET:</strong> Es utilizado para poder obtener datos de alg&uacute;n lugar, principalmente de un servidor
+                            <strong>GET:</strong> Es utilizado para poder obtener datos de algún lugar, principalmente de un servidor
                         </li>
                         <li>
-                            <strong>HEAD:</strong> Solicita &uacute;nicamente el encabezado de respuesta, sin el mensaje. Es &uacute;til para obtener informaci&oacute;n sin descargarla.
+                            <strong>HEAD:</strong> Solicita únicamente el encabezado de respuesta, sin el mensaje. Es útil para obtener información sin descargarla.
                         </li>
                         <li>
-                            <strong>POST:</strong> Enviar una entidad a un recurso espec&iacute;fico, causando cambios en el servidor
+                            <strong>POST:</strong> Enviar una entidad a un recurso específico, causando cambios en el servidor
                         </li>
                         <li>
-                            <strong>PUT:</strong> Reemplaza las representaciones del destino con la carga de la petici&oacute;n.
+                            <strong>PUT:</strong> Reemplaza las representaciones del destino con la carga de la petición.
                         </li>
                         <li>
                             <strong>PATCH:</strong> Es utilizado para aplicar modificaciones parciales a un recurso.
                         </li>
                         <li>
-                            <strong>DELETE:</strong> Borra un recurso en espec&iacute;fico.
+                            <strong>DELETE:</strong> Borra un recurso en específico.
                         </li>
                     </ul>
                 </li>
 
                 <!-- Cuarta pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?
                     </h3>
                     <p>
-                        El m&eacute;todo que se debe utilizar es POST, puesto que, introduce los par&aacute;metros en la solicitud HTTP para el servidor, lo que significa, que no queda visible para el usuario, los datos no se muestran en el cache ni en el historial.
+                        El método que se debe utilizar es POST, puesto que, introduce los parámetros en la solicitud HTTP para el servidor, lo que significa, que no queda visible para el usuario, los datos no se muestran en el cache ni en el historial.
                     </p>
                 </li>
 
                 <!-- Quinta pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
                     </h3>
                     <p>
-                        El m&eacute;todo que se utiliza es GET, porque este m&eacute;todo se utiliza para realizar una representaci&oacute;n de un recurso en espec&iacute;fico.
+                        El método que se utiliza es GET, porque este método se utiliza para realizar una representación de un recurso en específico.
                     </p>
                 </li>
 
                 <!-- Sexta pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
                     </h3>
                     <p>
-                        El c&oacute;digo de estado 200, se utiliza para indicar que recibi&oacute;, proces&oacute; y realiz&oacute; una solicitud correctamente.
+                        El código de estado 200, se utiliza para indicar que recibió, procesó y realizó una solicitud correctamente.
                     </p>
                 </li>
 
@@ -118,27 +118,27 @@
                         ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?
                     </h3>
                     <p>
-                        S&iacute;, es responsabilidad del desarrollador corregir si se encuentra un error 404, el error 404 indica que el servidor no pudo encontrar el recurso solicitado.
+                        Sí, es responsabilidad del desarrollador corregir si se encuentra un error 404, el error 404 indica que el servidor no pudo encontrar el recurso solicitado.
                     </p>
                 </li>
 
                 <!-- Octava pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?
                     </h3>
                     <p>
-                        El error 500 o tambi&eacute;n conocido como un "Error interno del servidor", indica que ha ocurrido un problema con el servidor que impide procesar la solicitud del usuario.
+                        El error 500 o también conocido como un "Error interno del servidor", indica que ha ocurrido un problema con el servidor que impide procesar la solicitud del usuario.
                     </p>
                 </li>
 
                 <!-- Novena pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.
                     </h3>
                     <p>
-                        Cuando un atributo HTML esta despreciado, significa que a&uacute;n no es compatible con los navegadores. Algunos elementos
+                        Cuando un atributo HTML esta despreciado, significa que aún no es compatible con los navegadores. Algunos elementos
                     </p>
                     <ul>
                         <li>font</li>
@@ -150,7 +150,7 @@
 
                 <!-- Decima pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
                     </h3>
                     <p>
@@ -158,7 +158,7 @@
                     </p>
                     <ul>
                         <li>
-                            HTML5 tiene una sintaxis m&aacute;s clara y legible, de la misma manera, tiene una sem&aacute;ntica mejorada que permite a los desarrolladores estructurar los documentos de una manera m&aacute;s legible.
+                            HTML5 tiene una sintaxis más clara y legible, de la misma manera, tiene una semántica mejorada que permite a los desarrolladores estructurar los documentos de una manera más legible.
                         </li>
                         <li>
                             HTML5 ofrece soporte para audio y video sin la necesidad de hacer plugins externos 
@@ -167,14 +167,14 @@
                             HTML5 proporciona numerosas APIs integradas que permiten a los desarrolladores acceder a funciones avanzadas del navegador 
                         </li>
                         <li>
-                            La compatibilidad que HTML5 ofrece una mejor compatibilidad con dispositivos m&oacute;viles, lo cual, facilita la creaci&oacute;n de sitios web que se adapten a diferentes tamaños de pantallas.
+                            La compatibilidad que HTML5 ofrece una mejor compatibilidad con dispositivos móviles, lo cual, facilita la creación de sitios web que se adapten a diferentes tamaños de pantallas.
                         </li>
                     </ul>
                 </li>
-                
+                    
                 <!-- Onceava pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Qué componentes de estructura y estilo tiene una tabla?
                     </h3>
                     <strong>Estructura</strong>
@@ -200,7 +200,7 @@
 
                 <!-- Doceava pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuáles son los principales controles de una forma HTML5?
                     </h3>
                     <ul>
@@ -216,7 +216,7 @@
 
                 <!-- Treceava pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)
                     </h3>
                     <p>
@@ -226,18 +226,18 @@
 
                 <!-- Catorceava pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuál es el ciclo de vida de los sistemas de información?
                     </h3>
                     <ul>
                         <li>
-                            <strong>Nace:</strong> El sistema nace cuando comienza a detectar la oportunidad de crear un sistema de informaci&oacute;n. 
+                            <strong>Nace:</strong> El sistema nace cuando comienza a detectar la oportunidad de crear un sistema de información. 
                         </li>
                         <li>
                             <strong>Desarrolla:</strong> El sistema se desarrolla cuando se crea el sistema.
                         </li>
                         <li>
-                            <strong>Producci&oacute;n:</strong> La producci&oacute;n cuando se implementa, se prueba y se corrigen las fallas existentes. 
+                            <strong>Producción:</strong> La producción cuando se implementa, se prueba y se corrigen las fallas existentes. 
                         </li>
                         <li>
                             <strong>Muere:</strong> Cuando el sistema no satisface las necesidades.
@@ -247,7 +247,7 @@
 
                 <!-- Quinceava pregunta -->
                 <li>
-                    <h3>
+                    <h3 class="question">
                         ¿Cuál es el ciclo de desarrollo de sistemas de información?
                     </h3>
                     <ul>
@@ -266,12 +266,49 @@
                     </ul>
                 </li>
             </ol>
-        </section>        
+        </section>
+        <section class="questions-container">
+            <h2 class="sub-title">Laboratorio 2</h2>
+            <ol>
+                <li>
+                    <h3 class="question">
+                        Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? 
+                    </h3>
+                    <p>
+                        Mi recomendación es evitar !important, puesto que, es una declaración que le da prioridad a una regla de CSS sobre otras reglas que podrían afectar a uno o varios elementos. El uso excesivo es un código difícil de entender. 
+                    </p>
+                </li>
+                <li>
+                    <h3 class="question">
+                        Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?
+                    </h3>
+                    <p>
+                        Es importante escoger una imagén de fondo, puesto que puede afectar la estética y la usabilidad del sitio. Además, la imagén no debe interferir con la legibilidad del texto, debe tener un contraste adecuado para que sea fácil de leer. 
+                    </p>
+                </li>
+                <li>
+                    <h3 class="question">
+                        Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?
+                    </h3>
+                    <p>
+                        Mi recomendación, es que, no sean unidades absolutas o fijas, que sean unidades relativas para un diseño más flexible y que se pueda adaptar en diferentes tamaños de pantalla y dispositivos.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="question">
+                        ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?
+                    </h3>
+                    <p>
+                        Una versión minimizada del CSS ayuda a acelerar el tiempo de renderizado de la página, menos código significa menos trabajo para el navegador a la hora de aplicar estilos en la página.
+                    </p>
+                </li>
+            </ol>
+        </section>       
     </main>
     <footer>
-        <div>
+        <p>
            Esta página esta diseñada con: <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-        </div>
+        </p>
        <section>
             <h3>Referencias</h3>
             <ul>
@@ -289,6 +326,9 @@
                 </li>
                 <li>
                     <a href="https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/get-vs-post/">https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/get-vs-post/</a>
+                </li>
+                <li>
+                    <a href="https://www.integrasistemas.es/blog/general/uso-de-important-en-css/#:~:text=important%3B%20en%20CSS%2C%20no%20se,desactiva%20las%20reglas%20de%20cascada.">https://www.integrasistemas.es/blog/general/uso-de-important-en-css/#:~:text=important%3B%20en%20CSS%2C%20no%20se,desactiva%20las%20reglas%20de%20cascada.</a>
                 </li>
             </ul>
        </section> 
