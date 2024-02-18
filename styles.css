@@ -17,6 +17,7 @@ body {
     width: 100vw;
     font-family: "Roboto", sans-serif;
     background-color: var(--seasalt);
+    color: var(--dark-electric-blue);
 }
 
 header {
@@ -37,12 +38,19 @@ h3, h2, h1 {
     padding-top: 1em;
 }
 
-ol, ol li p, ol li ul, p, h3 {
-    color: var(--dark-electric-blue);
-}
-
 header h1, nav p {
     color: #088F8F;
+}
+
+table {
+    width: 100%;
+    color: var(--dark-electric-blue);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
 }
 
 a:hover {
