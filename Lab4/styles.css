@@ -22,7 +22,7 @@ body {
 
 header {
     height: 80vh;
-    background-image: url(images/header-image.jpeg);
+    background-image: url(../images/header-image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
