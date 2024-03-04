@@ -1,0 +1,31 @@
+{
+  "name": "tc2005b-individual-benjaminarauz",
+  "version": "1.0.0",
+  "description": "Repositorio individual de laboratorios de la materia TC2005B",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon Lab11/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminArauz/TC2005B-Individual-BenjaminArauz.git"
+  },
+  "keywords": [
+    "TC2005B"
+  ],
+  "author": "Benjamín Arauz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenjaminArauz/TC2005B-Individual-BenjaminArauz/issues"
+  },
+  "homepage": "https://github.com/BenjaminArauz/TC2005B-Individual-BenjaminArauz#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
