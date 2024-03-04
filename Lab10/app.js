@@ -316,6 +316,8 @@ const html_form = `
 </section>
 `;
 
+const filesystem = require('fs');
+
 let productos = [
     {
         cantidad: 0,
@@ -428,6 +430,10 @@ const server = http.createServer((request, response) => {
                 descripcion: input_descripcion,
                 url: input_url
             });
+            filesystem.writeFileSync('productos.txt', '');
+            for (let i = 0; i < productos.length; i++) {
+                filesystem.appendFileSync('productos.txt', productos[i].nombre  + "\n" + productos[i].precio + "\n" + productos[i].descripcion + "\n" + productos[i].url+ "\n\n");
+            }
             response.writeHead(302, { 'Location': '/' });
             return response.end();
         });
