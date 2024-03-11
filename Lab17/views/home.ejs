@@ -1,0 +1,55 @@
+<%- include('includes/head.ejs', {nombreUsuario: nombreUsuario}) %>
+
+<div class="columns">
+<% let i = 1 %>
+<% for (i in productos) { %>
+<%      if (i % 3 == 0){ %>
+            </div>
+            <div class="columns">
+<%      } %>      
+
+        <div class="column is-one-third">
+            <div class="card has-background-info-light">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="<%= productos[i].url %>" alt="<%= productos[i].nombre %>">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <a href="/modificar/<%= productos[i].IDProducto %>">
+                                <p class="title is-4" id="name_<%= i %>"><%= productos[i].nombre %></p>
+                            </a>
+                            <p class="subtitle is-6">$<span id="price_<%= i %>"><%= productos[i].precio %></span></p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Lo que tienes que saber de este producto:</p>
+                        <p><%= productos[i].descripcion %></p>
+                        <p class="subtitle is-4">Cantidad</p>
+                        <div class="columns">
+                            <div class="column is-one-fifth">
+                                <button class="button is-small is-dark" id="sum_button_<%= i %>">+</button>
+                            </div>
+                            <div class="column is-one-fifth">
+                                <a href="<%= productos[i].url %>">
+                                    <button class="button is-small is-dark" id="substract_button_<%= i %>">-</button>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <p class="is-size-6 quantity" id="quantity_<%= i %>"><%= productos[i].cantidad %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<%  } %>
+
+</div>
+<% if(ultimo_producto != '') { %> 
+    <div>El ultimo producto agregado fue <%= ultimo_producto %>.</div>
+<% } %>
+
+<%- include('includes/foot.ejs') %>

@@ -1,0 +1,43 @@
+<%- include('includes/head.ejs', {nombreUsuario: nombreUsuario}) %>
+
+<section class="container mt-6">
+    <h2 class="is-size-4">Agregar reseña</h2>
+    <form action="/resenia" method="POST">
+        <div class="field">
+            <label class="label" for="nombre_persona">Nombre: </label>
+            <div class="control">
+              <input class="input" id="nombre_persona" name="nombre_persona" type="text" placeholder="Ingrese su nombre">
+            </div>
+            </div>
+            <div class="field">
+            <label class="label" for="resenia_texto">Reseña</label>
+            <div class="control">
+                <input class="input" id="resenia_texto" name="resenia_texto" type="text" placeholder="Ingrese la reseña">
+            </div>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <input class="button is-link" type="submit" value="Crear">
+            </div>
+        </div>
+    </form>
+</section>
+
+<section class="container mt-6">
+<% if (resenias.length == 0) {%>
+    <h2 class="is-size-4">Reseñas registradas</h2>
+<% } else {%>
+    <h2 class="is-size-4">No hay reseñas registradas</h2>
+<% } %>     
+
+<% let i = 1 %>
+<% for (i in resenias) { %>
+
+        <p class="is-size-6">Nombre: <%= resenias[i].nombre %></p>
+        <p class="is-size-6">Reseña: <%= resenias[i].texto %></p>
+        <br>
+<% } %>   
+</section>
+
+<%- include('includes/foot.ejs') %>
