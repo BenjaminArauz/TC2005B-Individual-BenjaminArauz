@@ -1,0 +1,63 @@
+<%- include('includes/head.ejs', {nombreUsuario: nombreUsuario}) %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Poner caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Indica al navegador que va a ser responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo a la pestaña -->
+    <title>Laboratorios Web</title>
+    <!-- Imagen de la pestaña 32x32 (favicon) -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/validarcontra.css">
+</head>
+
+<body>
+    <div class="contraseña container">
+        <h1>Validar Contraseña</h1>
+        <!-- etiqueta from para inputs -->
+        <form action="/validar-contrasiena" method="POST">
+            <!-- for es para clicear el nombre  -->
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" oninput="nivelSeguridad()" name="password"><br>
+            <div>
+                <div id="barra-seguridad"></div>
+            </div>
+            <p id="nivel-seguridad"></p>
+            
+            <label for="confirm-password">Confirmar contraseña:</label><br>
+            <input type="password" id="confirm-password" name="confirm_password"><br>
+            <!-- type="submit" Eviar datos de los inputs del formaulario -->
+            <input type="submit" value="Validar">
+        </form>
+    </div>
+    <div class="preguntas container">
+        <button type="submit" id="preguntas" onclick="mostrarPreguntas()">Preguntas</button>
+        <div class="seccion-preguntas" id="seccion-preguntas" hidden>
+            <h1>Preguntas</h1>
+            <p class="preguntas">1.- <strong>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</strong></p>
+            <ol class="respuesta">
+                <li>Mejora la experiencia del usuario.</li>
+                <li>Mejora el rendimiento del sitio web.</li>
+                <li>Ahorra ancho de banda.</li>
+                <li>Mejora la seguridad del sitio web.</li>
+            </ol>
+            <p class="preguntas">2.- <strong>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</strong></p>
+            <ol class="respuesta">
+                <li>Desactivando JavaScript en el navegador.</li>
+                <li>Modificar el código fuente mediante el inspector.</li>
+                <li>No hacer un duplicado de las validaciones en el servidor.</li>
+            </ol>
+            <p class="preguntas">3.- <strong>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</strong></p>
+            <p class="respuesta">Porque al validar los inputs de las formas antes de enviar los datos al servidor porque proporciona una capa adicional de seguridad y reduce el tiempo de carga mejorando la experiencia del usuario</p>
+        </div>
+    </div>
+    <script src="./JS/scriptvalidarcontra.js"></script>
+</body>
+</html>
+
+
+<%- include('includes/foot.ejs') %>
