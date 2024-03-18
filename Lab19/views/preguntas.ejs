@@ -1,0 +1,170 @@
+<%- include('includes/head.ejs', {
+    nombreUsuario: nombreUsuario,
+    permisos : permisos
+  }) %>
+
+<section class="container mt-6 content is-normal">
+    <h2 class="is-size-4">Preguntas</h2>
+    <h3 class="is-size-5 has-text-weight-bold mt-3">
+        ¿En qué consiste el control de acceso basado en roles?
+    </h3>
+    <p>
+        El control de acceso basado en roles (RBAC) es un modelo de control de acceso que se basa en la asignación de roles a los usuarios. Los roles definen las tareas que un usuario puede realizar en un sistema. El control de acceso basado en roles se basa en la premisa de que los usuarios no tienen permisos directos, sino que se les asignan roles que definen sus permisos. Los roles se asignan a los usuarios y los usuarios adquieren los permisos asociados con sus roles. El control de acceso basado en roles es un enfoque eficaz para la gestión de la seguridad y la administración de los sistemas de información.
+    </p>
+    <h3 class="is-size-5 has-text-weight-bold mt-3">
+        Investiguen y describan 2 sistemas, uno que aplique RBAC y uno que no. Realicen un análisis de las ventajas y desventajas de cada uno con respecto al control de acceso.
+    </h3>
+    <p>
+        Ejemplo 1: Sistema de gestión de documentos
+    </p>
+    <p>
+        RBAC (Control de acceso basado en roles):
+    </p>
+    <ul>
+        <li>
+            <p>
+                Roles: Administrador, Editor, Lector
+            </p>
+        </li>
+        <li>
+            <p>
+                Permisos:
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Administrador: Crear, editar, eliminar documentos.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Editor: Editar y ver documentos.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Lector: Ver documentos.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+
+    <p>
+        Ejemplo 2: Carpeta compartida en la nube
+    </p>
+    <p>
+        DAC (Control de acceso discrecional):
+    </p>
+    <ul>
+        <li>
+            <p>
+                Propietario: El usuario que creó la carpeta.
+            </p>
+        </li>
+        <li>
+            <p>
+                Permisos:
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Usuarios específicos: Pueden ver, editar o eliminar archivos.                        </p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Grupos: Miembros del grupo pueden ver, editar o eliminar archivos.                        </p>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+
+    <p>
+        Análisis:
+    </p>
+    <p>
+        Ventajas de RBAC:    
+    </p>
+    <ul>
+        <li>
+            <p>
+                Simplifica la administración: Los permisos se asignan a roles, no a usuarios individuales.
+            </p>
+        </li>
+        <li>
+            <p>
+                Mejora la seguridad: Reduce el riesgo de errores al asignar permisos.
+            </p>
+        </li>
+        <li>
+            <p>
+                Mayor escalabilidad: Facilita la administración de permisos en grandes organizaciones.
+            </p>
+        </li>
+        <li>
+            <p>
+                Mejora la auditoría: Permite un seguimiento más preciso del acceso a los recursos.
+            </p>
+        </li>
+    </ul>
+    <p>
+        Desventajas de RBAC:    
+    </p>
+    <ul>
+        <li>
+            <p>
+                Menos flexibilidad: Puede ser difícil adaptar los roles a las necesidades específicas de cada usuario.
+            </p>
+        </li>
+        <li>
+            <p>
+                Dificultad para definir roles: La definición de roles puede ser compleja en organizaciones con estructuras jerárquicas complejas.
+            </p>
+        </li>
+        </li>
+    </ul>
+
+    <p>
+        Ventajas de DAC:  
+    </p>
+    <ul>
+        <li>
+            <p>
+                Más flexible: Permite un control más granular sobre los permisos.
+            </p>
+        </li>
+        <li>
+            <p>
+                Más sencillo de implementar: No requiere una estructura de roles compleja.
+            </p>
+        </li>
+    </ul>
+    <p>
+        Desventajas de DAC:
+    </p>
+    <ul>
+        <li>
+            <p>
+                Administración más compleja: Dificultad para administrar permisos para un gran número de usuarios.
+            </p>
+        </li>
+        <li>
+            <p>
+                Mayor riesgo de errores: Los errores al asignar permisos pueden comprometer la seguridad.
+            </p>
+        </li>
+        <li>
+            <p>
+                Dificultad de auditoría: Dificultad para rastrear el acceso a los recursos.
+            </p>
+        </li>
+    </ul>
+</section>
+
+<%- include('includes/foot.ejs') %>

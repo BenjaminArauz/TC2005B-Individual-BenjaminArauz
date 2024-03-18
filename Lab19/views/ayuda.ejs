@@ -1,0 +1,60 @@
+<%- include('includes/head.ejs', {
+    nombreUsuario: nombreUsuario,
+    permisos : permisos
+  }) %>
+
+            <h2 class="is-size-4">Ayuda</h2>
+            <section class="container is-max-desktop content is-normal">
+                <h3 class="is-size-5 has-text-weight-bold mt-3">Validador de contraseña</h3>
+                <p class="is-size-6 mt-2">Aqui hay algunos tips: </p>
+                <ul>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Tener como mínimo 8 caracteres
+                        </p>
+                    </li>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Usar al menos un caracter especial (@ * , . + - etc)
+                        </p>
+                    </li>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Tener al menos un número
+                        </p>
+                    </li>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Tener al menos una mayuscula y minuscula
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="container is-max-desktop">
+                <h3 class="is-size-5 has-text-weight-bold mt-3">Agregar producto</h3>
+                <p class="is-size-6 mt-2">Aqui hay algunos tips: </p>
+                <ul>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Nombre: Un nombre fácil de reconocer
+                        </p>
+                    </li>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Url: Asegurarse que la url de la imagén sea válida para páginas web
+                        </p>
+                    </li>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Costo: asegurarse que el costo sea el correcto
+                        </p>
+                    </li>
+                    <li>
+                        <p class="is-size-6 mt-2">
+                            Descripción: Tener una descripción correcta para el producto
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+<%- include('includes/foot.ejs') %>
