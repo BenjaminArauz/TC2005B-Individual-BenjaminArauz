@@ -54,9 +54,9 @@ router.post('/agregar', (request, response, next) => {
         url: request.body.imagen_producto
     });
     //Agregar productos a un txt
-    filesystem.writeFileSync('Lab12/productos.txt', '');
+    filesystem.writeFileSync('productos.txt', '');
     for (let i = 0; i < productos.length; i++) {
-        filesystem.appendFileSync('Lab12/productos.txt', productos[i].nombre  + "\n" + productos[i].precio + "\n" + productos[i].descripcion + "\n" + productos[i].url+ "\n\n");
+        filesystem.appendFileSync('productos.txt', productos[i].nombre  + "\n" + productos[i].precio + "\n" + productos[i].descripcion + "\n" + productos[i].url+ "\n\n");
     }
     response.redirect('/');
 });
