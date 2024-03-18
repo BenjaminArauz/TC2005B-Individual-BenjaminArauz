@@ -1,0 +1,68 @@
+<%- include('includes/head.ejs', {nombreUsuario: nombreUsuario}) %>
+
+<% if(error != '') { %>
+  <div class="notification is-danger">
+      <strong><%= error %></strong>
+  </div>
+<% } %>
+
+<% if (usuariosLogin) { %>
+  <form action="/usuarios/login" method="POST">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+    <div class="field">
+      <label class="label" for="nombreUsuario">Nombre de Usuario</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-success" id="nombreUsuario" name="nombreUsuario" type="text" placeholder="Nombre de usuario">
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="contraseniaUsuario">Contraseña</label>
+      <p class="control has-icons-left">
+        <input class="input" id="contraseniaUsuario" name="contraseniaUsuario" type="password" placeholder="Contraseña">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control">
+          <button class="button is-success">
+              Login
+          </button>
+      </p>
+    </div>
+</form>
+  <% } else { %>
+    <form action="/usuarios/signup" method="POST">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+      <div class="field">
+        <label class="label" for="nombreUsuario">Nombre de Usuario</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" id="nombreUsuario" name="nombreUsuario" type="text" placeholder="Nombre de usuario">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="contraseniaUsuario">Contraseña</label>
+        <p class="control has-icons-left">
+          <input class="input" id="contraseniaUsuario" name="contraseniaUsuario" type="password" placeholder="Contraseña">
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+            <button class="button is-success">
+                Sign up
+            </button>
+        </p>
+      </div>
+</form>
+    <% } %>
+

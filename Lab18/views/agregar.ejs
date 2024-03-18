@@ -1,0 +1,39 @@
+<%- include('includes/head.ejs', {nombreUsuario: nombreUsuario}) %>
+
+<section class="container mt-6">
+    <h2 class="is-size-4">Agregar productos</h2>
+    <form action="/agregar" method="POST">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+        <div class="field">
+            <label class="label" for="nombre_producto">Nombre del producto</label>
+            <div class="control">
+              <input class="input" id="nombre_producto" name="nombre_producto" type="text" placeholder="Ingrese nombre del producto">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="precio_producto">Precio</label>
+            <div class="control">
+              <input class="input" id="precio_producto" name="precio_producto" type="number" placeholder="Ingrese precio del producto">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="descripcion_producto">Descripción: </label>
+            <div class="control">
+              <input class="input" id="descripcion_producto" name="descripcion_producto" type="text" placeholder="Ingrese una descripción del producto">
+            </div>
+          </div>
+          <div class="field">
+          <label class="label" for="imagen_producto">Url de la imagen</label>
+          <div class="control">
+            <input class="input" id="imagen_producto" name="imagen_producto" type="text" placeholder="Ingrese url de la imagen del producto">
+          </div>
+        </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <input class="button is-link" type="submit" value="Crear">
+            </div>
+          </div>
+    </form>
+    </section>
+
+<%- include('includes/foot.ejs') %>

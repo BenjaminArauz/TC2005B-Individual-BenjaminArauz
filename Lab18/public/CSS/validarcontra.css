@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------- Barra de seguridad -------------------*/
+#barra-seguridad {
+    width: 0%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.preguntas.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px #000;
+}
+
+.respuesta {
+    border: none;
+}
+
+.contraseña.container {
+    width: 30%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px #000;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*----------------------- Pie de pagina ----------------------*/
+/*Color del enlace*/
+a {
+    color: #0056b3; /*Color del enlace*/
+}
+/*Color del enlace cuando el cursor está sobre él*/
+a:hover {
+    color: #ff00ff;
+}
+/*Color del enlace cuando está siendo activado*/
+a:active {
+    color: #ff00ff; /* Magenta */
+}
+
+footer {
+    width: 50%;
+    text-align: center;
+}
