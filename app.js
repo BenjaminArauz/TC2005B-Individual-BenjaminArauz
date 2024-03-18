@@ -19,7 +19,7 @@ app.use('/feedback', rutasFeedback);
 //Respuesta a la página 404
 app.use((request, response, next) => {
     response.status(404);
-    let html = html_head;
+    let html = " ";
     html += `<h2 class="title">Error 404 D:</h2>`;
     response.send(html); //Manda la respuesta
 });

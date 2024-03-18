@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const html_head = `
+const html_header = `
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -227,13 +227,13 @@ const html_footer = `
 `;
 
 router.get('/ayuda', (request, response, next) => {
-    let html = html_head;
+    let html = html_header;
     html += html_main;
     response.send(html);
 });
 
 router.get('/preguntas-referencias', (request, response, next) => {
-    let html = html_head;
+    let html = html_header;
     html += html_footer;
     response.send(html);
 });
