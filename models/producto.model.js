@@ -45,9 +45,9 @@ module.exports = class Producto {
     }
 
     static crear_txt(){
-        filesystem.writeFileSync('Lab13/productos.txt', '');
+        filesystem.writeFileSync('productos.txt', '');
         for (let i = 0; i < productos.length; i++) {
-            filesystem.appendFileSync('Lab13/productos.txt', productos[i].nombre  + "\n" + productos[i].precio + "\n" + productos[i].descripcion + "\n" + productos[i].url+ "\n\n");
+            filesystem.appendFileSync('productos.txt', productos[i].nombre  + "\n" + productos[i].precio + "\n" + productos[i].descripcion + "\n" + productos[i].url+ "\n\n");
         }
     }
 
