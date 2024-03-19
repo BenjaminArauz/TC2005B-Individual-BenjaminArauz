@@ -5,6 +5,7 @@ exports.get_resenia = (request, response, next) => {
         response.render('resenia', {
             resenias: rows,
             nombreUsuario: request.session.username || '',
+            csrfToken: request.csrfToken(),
         });
     })
     .catch((error) => {
