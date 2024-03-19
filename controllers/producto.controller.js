@@ -65,9 +65,9 @@ exports.post_agregar = (request, response, next) => {
 
     //Agregar productos a un txt
     Producto.fetchAll().then(([rows, fieldData]) => {
-        filesystem.writeFileSync('Lab19/productos.txt', '');
+        filesystem.writeFileSync('productos.txt', '');
         for (let i = 0; i < rows.length; i++) {
-            filesystem.appendFileSync('Lab19/productos.txt', rows[i].nombre  + "\n" + rows[i].precio + "\n" + rows[i].texto + "\n" + rows[i].url+ "\n\n");
+            filesystem.appendFileSync('productos.txt', rows[i].nombre  + "\n" + rows[i].precio + "\n" + rows[i].texto + "\n" + rows[i].url+ "\n\n");
         }
     })
     .catch((error) => {
