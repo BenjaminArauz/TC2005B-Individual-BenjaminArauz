@@ -1,0 +1,36 @@
+<%- include('includes/head.ejs', {nombreUsuario: nombreUsuario}) %>
+<section class="container mt-6 content is-normal">
+    <h2 class="is-size-4">Preguntas</h2>
+    <h3 class="is-size-5 has-text-weight-bold mt-3">
+        ¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?
+    </h3>
+    <p>
+        Tiene algunas ventajas, entre ellas se encuentran:
+    </p>
+    <ul>
+        <li>
+            <p>
+                <strong>Reutilización de código:</strong> El código SQL se puede reutilizar en diferentes partes de la aplicación.
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Separación de preocupaciones: </strong>Separar las preocupaciones relacionadas con la manipulación de datos de las preocupaciones relacionadas con la lógica.
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Seguridad: </strong>Se puede implementar un control de acceso más estricto. Esto reduce la superficie de ataque y facilita la implementación de medidas de seguridad como la validación de datos.
+            </p>
+        </li>
+    </ul>
+
+    <h3 class="is-size-5 has-text-weight-bold mt-3">
+        ¿Qué es SQL injection y cómo se puede prevenir?
+    </h3>
+    <p>
+        SQL injection es un ataque que se produce cuando un atacante inserta código SQL malicioso en una consulta SQL. Esto puede permitir al atacante leer, modificar o eliminar datos de la base de datos. Esto se puede evitar, usando parámetros de posición en los valores de entrada del usuario, esto evita que los datos ingresados por el usuario sean interpretados como parte del código SQL.
+    </p>
+</section>
+
+<%- include('includes/foot.ejs') %>

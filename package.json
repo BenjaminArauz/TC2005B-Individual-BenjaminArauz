@@ -4,7 +4,7 @@
   "description": "Repositorio individual de laboratorios de la materia TC2005B",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon Lab19/app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
